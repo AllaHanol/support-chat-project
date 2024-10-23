@@ -1,0 +1,29 @@
+:root {
+  font-family: Arial, sans-serif;
+  letter-spacing: 0;
+  --black: #242424;
+  --porcelain: #f7f8f8;
+   --bezier: 250ms cubic-bezier(0.25, 0.1, 0.25, 1) 1ms;
+  
+  
+  
+  
+  
+}
+body{
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+  background-color: #484c5c;
+  color: #fff;
+
+}
+.section{
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+    @media screen and (min-width: 1200px){
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+}

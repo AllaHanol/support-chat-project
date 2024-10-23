@@ -1,0 +1,14 @@
+.chat-header{
+    display: flex;
+    
+}
+.header-title{
+    font-weight: 700;
+    font-size: 16px;
+    color: #f7f8f8;
+}
+.online-status{
+    font-size: 12px;
+    line-height: 133%;
+    color: #f7f8f8;
+}
