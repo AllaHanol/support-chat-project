@@ -16,8 +16,8 @@
       href="./src/css/styles.css"
     />
   </head>
-  <body>
-    <section class="chat">
+  <body class="dark-theme">
+    <div class="chat">
       <div class="chat-block">
         <div class="chat-header">
           <img
@@ -32,25 +32,17 @@
             <h1 class="header-title">
               Менеджер Валентин
             </h1>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="6"
-              height="6"
-              viewBox="0 0 6 6"
-              fill="none"
-            >
-              <circle
-                cx="3"
-                cy="3"
-                r="3"
-                fill="#11CABE"
-              />
-            </svg>
+
             <span class="online-status"
               >Онлайн</span
             >
           </div>
-
+          <button
+            class="toggle-theme"
+            type="button"
+          >
+            @
+          </button>
           <button
             class="chat-header-close-btn"
             type="button"
@@ -69,10 +61,10 @@
             </svg>
           </button>
         </div>
-        <div class="chat_messages">
+        <div class="chat-body">
           <!-- js-content -->
         </div>
-        <div class="chat_container">
+        <div class="chat-footer">
           <div class="chat_input">
             <textarea
               class="chat-input-message"
@@ -80,23 +72,7 @@
               id="user-comment"
               placeholder="Введите свое сообщение..."
             ></textarea>
-            <div
-              id="recording-indicator"
-              style="display: none"
-            >
-              <div
-                id="progress-bar"
-              ></div>
-              <span id="timer"
-                >00:00</span
-              >
-              <button
-                id="delete-recording-btn"
-                style="display: none"
-              >
-                🗑️
-              </button>
-            </div>
+
             <div
               class="chat_container_btn"
             >
@@ -197,7 +173,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <script
       type="module"
