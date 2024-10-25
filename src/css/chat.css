@@ -3,7 +3,6 @@
     @media screen and (min-width: 1200px){
         max-width: 476px;
         max-height: 567px;
-        padding: 0 24 px;
     }
     
 }
@@ -17,9 +16,10 @@
     background-color: var(--color-main);
     @media screen and(min-width: 1200px){
         max-width: 476px;
-        min-height: 567px;
+        max-height: 567px;
         margin: 0 auto;
         border-radius: 32px;
+        /* padding: 0 24 px; */
         
         
     }
@@ -51,7 +51,7 @@
 .header-title{
     font-weight: 400;
     font-size: 16px;
-    color: #f7f8f8;
+    color: var(--color-text);
 }
 .online-status{
     position: relative;
@@ -60,7 +60,7 @@
     align-items: center;
     font-size: 12px;
     /* line-height: 1.3; */
-    color: #f7f8f8;
+    color: var(--color-text);
 }
 .online-status::before{
     content: '';
@@ -68,7 +68,7 @@
     left: 0;
     width: 6px;
     height: 6px;
-    background-color: #11cabe;
+    background-color: var(--color-online);
     border-radius: 100%;
 
 
@@ -77,7 +77,18 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    stroke: var(--color-text);
   
+}
+.chat-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100hv;
+}
+#clock{
+    color: var(--color-text);
+
 }
 .chat-footer{
     display: flex;
@@ -93,17 +104,17 @@ font-weight: 400;
 font-size: 14px;
 line-height: 157%;
 text-align: center;
-color: #b4b7c5;
-@media screen and (min-width:1200px){
+color: var(--color-main);
+ @media screen and (min-width:1200px){
     min-width: 476px;
     max-height: 567px;
-    
 }
+
 }
 .chat_input{
     position: relative;
     display: flex;
-
+   
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -116,8 +127,9 @@ color: #b4b7c5;
     display: block;
     font-size: 14px;
     line-height: 120%;
-    background-color: #484c5c;
-    color: #8c92a4; 
+    background-color: var(--color-secondary);
+    backdrop-filter: blur(50px);
+    color: var(--color-fourth); 
     width: 100%;
     height: 100%;
     border: none;
@@ -125,7 +137,7 @@ color: #b4b7c5;
     @media screen and (min-width:1200px){
 font-size: 16px;
 line-height: 150%;
-color: #f7f8f8;
+color: var(--color-secondary);
     }
 } 
  audio{
@@ -141,7 +153,7 @@ color: #f7f8f8;
  }
 #recording-status {
     margin-top: 10px;
-    color: red;
+    color: var(--color-red);
     font-size: 16px;
 }
 #recording-indicator {
@@ -167,7 +179,7 @@ color: #f7f8f8;
     background-color: transparent;
     border: none;
     font-size: 24px;
-    color: red;
+    color: var(--color-red);
     cursor: pointer;
 }
 .chat_container_btn{
@@ -183,7 +195,7 @@ border: none;
 align-items: center;
 width: 32px;
 height: 32px;
-background: linear-gradient(242deg, #246cf9 0%, #1e68f6 0.01%, #0047d0 100%);
+background:var(--color-gradient);
 
 }
 /* .voice-message {
@@ -206,7 +218,7 @@ align-items: center;
 border: none;
 width: 32px;
 height: 32px;
-background: linear-gradient(242deg, #246cf9 0%, #1e68f6 0.01%, #0047d0 100%);
+background: var(--color-gradient);
 }
 .chat_input-send-btn{
 border-radius: 100px;
@@ -214,5 +226,5 @@ align-items: center;
 border: none;
 width: 32px;
 height: 32px;
-background: linear-gradient(242deg, #246cf9 0%, #1e68f6 0.01%, #0047d0 100%);
+background: var(--color-gradient);
 }
